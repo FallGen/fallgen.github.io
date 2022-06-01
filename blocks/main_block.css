@@ -1,0 +1,74 @@
+.parallax {
+    background-image: url(../image/bg_inst.png);
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.parallax h1 {
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.parallax .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 2;
+}
+
+/* phone */
+.parallax-photo-laptope {
+	max-width: 50%;
+	max-height: 50%;
+	z-index: 3;
+	box-shadow: -7px -7px 15px;
+	position: relative;
+}
+
+/* laptope */
+.parallax-photo2-phone {
+	max-width: 30%;
+	max-height: 30%;
+	z-index: 3;
+	box-shadow: -7px -7px 15px;
+	position: relative;
+}
+
+.parallax {
+	padding: 15px;
+}
+
+.block_content {
+	background: black;
+	padding: 55px;
+	text-align: center;
+}
+
+.block_content h2, h3 {
+	color: white;
+	z-index:3;
+	font-size: 20px;
+}
+
+.content_quote {
+	padding-top: 10px;
+	text-align: right;
+}
+
+.parallax_text {
+	z-index: 3;
+	margin: 30px;
+}
+.parallax-intro {
+	text-align: center;
+	margin: 50px;
+}
