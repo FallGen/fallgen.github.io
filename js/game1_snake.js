@@ -1,5 +1,12 @@
 function fnc_open_game() {
-game_snake.style.visibility='visible';
+	
+	let temp = document.getElementById('project_8');
+	if (window.innerWidth >= 750) {
+	temp.setAttribute(	'href', '#popup_game');
+	} else 	{		
+	temp.setAttribute(	'href', '#popup1');
+	fnc_popUp(event);
+	}
 }
 
 

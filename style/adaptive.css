@@ -10,7 +10,6 @@
 }
 .block_title_photo {
 	min-width: 350px;
-	/* background-position: 25% 25%; */
 }
 
 .name_block {
@@ -25,18 +24,16 @@
     padding-bottom: 80px;
 }
 
+.portfolio_body {
+    padding-bottom: 80px;
+}
+
 .kontacts_body {
 }
 
 .block_title {
 	display: flex;
 }
-
-
-.skills_content {
-	display: flex;
-}
-
 
 .name_block{
 	padding-bottom: 90px;
@@ -63,7 +60,11 @@
 @media only screen and (max-width: 1000px) {
 	/* АДАПТАЦИЯ ДЛЯ ПК */
 .dropdown-content {
-	top:70px;
+	top:54px;
+}
+
+.video_on_youtube {
+	min-height: 276px;
 }
 
 .header_href {
@@ -71,8 +72,7 @@
 }
 
 .sticky + .help_block{
-	padding-top: 96px;
-	/* padding-top: 70px; */
+	padding-top: 54px;
 }
 
 .aboutMe_body {
@@ -83,7 +83,6 @@
 
 .block_title {
 	display: block;
-	/* text-align: center; */
 }
 
 .kontacts_bg {
@@ -94,8 +93,9 @@
 	display:block;
 }
 
-.projects_content {
-	display:block;
+.aboutMe_content {
+	padding-bottom: 20px;
+
 }
 
 .name_block{
@@ -110,6 +110,11 @@
     padding-top: 50px;
 }
 
+.portfolio_body {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
 .skill_block {
 	min-height: 400px;
 }
@@ -119,12 +124,10 @@
 }
 
 .contacts_ref {
-	/* height: 60%; */
 	height: 60vh;
 }
 
 .kontacts_bg {
-	/* min-height: 650px; */
 	min-height: 100vh;
 }
 
