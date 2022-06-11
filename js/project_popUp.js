@@ -12,7 +12,7 @@ function create_indicator(){
 	test.innerHTML = '';
 
 	for (let index = 1; index <= img.length; index++) {
-		let count = document.createElement("count");
+		let count = document.createElement("div");
 		count.setAttribute(	'class', 'indicator_point');
 		count.setAttribute(	'id', 'indicator_point'+ index);
 
@@ -196,8 +196,8 @@ function fnc_popUp(event) {
 		create_indicator();
 		
 		document.getElementById("popup_title").innerHTML = "Личный website разработанный с помощью HTML, CSS, JS";
-		document.getElementById("popup_text").innerHTML = "";
-		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/\" target=”_blanc”> подробнее </a> </h2> ";
+		document.getElementById("popup_text").innerHTML = "Текущий сайт является результатом настоящего проекта";
+		// document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/\" target=”_blanc”> подробнее </a> </h2> ";
 		break;
 
 		case 'project_5':

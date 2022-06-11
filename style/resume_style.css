@@ -4,8 +4,6 @@
     display: block;
 }
 
-
-
 }
 @media only screen and (min-width: 1000px) {
 
@@ -69,3 +67,128 @@ h1, h2, h3 {
 	max-width: 50px;
 }
 
+.block_resume {
+	max-width: 1024px;
+	margin:  40px auto;
+	box-shadow: 1px 1px 10px 1px black;
+}
+
+.left_block {
+	background: #1E2939;
+	padding: 20px;
+}
+
+.right_block {
+	background: white;
+	padding: 20px;
+}
+
+.photo {
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+.img_photo {
+	max-width: 260px;
+	height: auto;
+	box-shadow: 1px 1px 10px 1px white;
+}
+.block_info {
+	margin: 5px;
+}
+
+.left_block h2 {
+	margin: 8px;
+}
+
+.left_block {
+	text-align: center;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.content_block {
+	display: flex;
+}
+
+.razdelenie {
+	content: "";
+	background: #1E2939;
+	height: 2px;
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.dop_text {
+	margin: 7px;
+}
+
+.god {
+	display: block;
+}
+
+.info {
+	margin: 0 30px;
+}
+.contacts_ref {
+	padding: 5px;
+}
+.contacts_ref img {
+	padding: 5px;
+	max-width: 35px;
+	height: auto;
+}
+
+.contacts_ref img:hover {
+	background: white;
+	border-radius: 20px;
+}
+
+.dop_info {
+}
+
+.dop_info .main_text {
+	padding: 3px;
+}
+.contacts .main_text {
+}
+
+.btn {
+	display:flex;
+	max-width: 1024px;
+	margin: auto;
+	margin-bottom: 50px;
+	background: #1E2939;
+	padding: 20px;
+}
+
+.btn:hover {
+	background: #41587a;
+	cursor:pointer;
+}
+
+.btn h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 20px;
+}
+
+.btn a {
+	text-decoration: none;
+}
+
+.dop_text a {
+	text-decoration: none;
+	color:  blue;
+}
+.dop_text a:hover {
+	color:  #FF0000;
+}
