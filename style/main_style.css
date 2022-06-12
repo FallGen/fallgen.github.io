@@ -706,13 +706,15 @@ body.lock {
 .basement_title {
 	padding: 5px;
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 }
 .basement_text a {
 	display: block;
 	flex-direction: column;
 	padding: 3px;
+	font-size: 14px;
+
 }
 
 /* game_snake */
