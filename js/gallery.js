@@ -27,7 +27,6 @@ function load_photo(){
 		add_a.setAttribute(	'alt', 'alt');
 		block_photo.appendChild(add_a);
 
-
 		let photo = document.getElementById("gallery-item" + index);
 		
 		// создание тега див1
