@@ -100,7 +100,7 @@ function fnc_video(event) {
 	let ID = event.target.id;
 	
 	function target_video (id_video) {
-		for (let index = 1; index < 7; index++) {
+		for (let index = 1; index <= 7; index++) {
 			if (index == id_video) 
 			document.getElementById("video_" + index).style.background = "#2368a1";
 			else
@@ -238,6 +238,17 @@ function fnc_popUp(event) {
 		document.getElementById("popup_title").innerHTML = "Разработка веб-приложения \"Змейка\" с помощью JS";
 		document.getElementById("popup_text").innerHTML = "Приложение не поддерживает работу на мобильном устройстве";
 		break;
+
+		case 'project_9':
+			img = ["url('image/project9.1.png')","url('image/project9.2.png')", "url('image/project9.3.png')", "url('image/project9.4.png')", "url('image/project9.5.png')", "url('image/project9.6.png')"," url('image/project9.7.png')"];
+			popup_img.style.backgroundImage = img[i];
+			create_indicator();
+			
+		document.getElementById("popup_title").innerHTML = "Разработка системы видеонаблюдения VSS by FallGen";
+		document.getElementById("popup_text").innerHTML = "VSS - Video Surveillance System by FallGen - система видеонаблюдения для объектов, организаций и компаний любого масштаба. в функциональную часть программного обеспечения входит: просмотр потоков видеозаписи камер в реальном времени; формирование вкладок видеокамер по заготовленным шаблонам: от 1 до 16 камер на одном экране; автоматизированная функция добавления камер в систему по заданному шаблону: ip, rstp, record; функция записи потока видеокамер, а также встроенный медиаплейер для просмотра архива";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/project-1.html\" target=”_blanc”> подробнее</a> </h2>";
+		break;
+	
 	}
 }
 

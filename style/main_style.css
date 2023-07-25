@@ -469,9 +469,8 @@ body.lock {
 .name_block h1 {
 	border-bottom: 2px solid #2368a1;
 	width: 25%;	
-	margin: auto;
-	padding-bottom: 15px;
-
+    margin: auto;
+    padding-bottom: 15px;
 }
 .name_block h2 {
 	padding-top: 10px;
@@ -559,9 +558,6 @@ body.lock {
 	transition: all ease 1s;
 }
 
-.portfolio_block :hover {
-}
-
 .video_on_youtube {
 	width: 100%;
 	min-height: 576px;
@@ -603,7 +599,7 @@ body.lock {
 	box-shadow: 3px 3px 10px #2368a1;
 }
 
-.project_icon1, .project_icon2, .project_icon3, .project_icon4, .project_icon5, .project_icon6, .project_icon7, .project_icon8{
+.project_icon1, .project_icon2, .project_icon3, .project_icon4, .project_icon5, .project_icon6, .project_icon7, .project_icon8,.project_icon9{
 	background-size: cover;
 	background-position: center center;
 	min-height: 350px;
@@ -632,6 +628,9 @@ body.lock {
 }
 .project_icon8 {
 	background-image: url(../image/project8.1.jpg);
+}
+.project_icon9 {
+	background-image: url(../image/project9.png);
 }
 
 /* kontacts */

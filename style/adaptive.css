@@ -47,8 +47,8 @@
 	height: 73%;
 }
 .popup_img {
-	/* min-width: 1000px; */
-	height: 500px;
+	min-width: 100vh;
+	height: 80vh;
 }
 
 .kontacts_bg {
