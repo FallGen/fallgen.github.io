@@ -152,13 +152,17 @@ h1, h2, h3 {
 	border-radius: 20px;
 }
 
-.dop_info {
-}
-
 .dop_info .main_text {
 	padding: 3px;
 }
-.contacts .main_text {
+
+.oglavlenie_link {
+	color:black;
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 15px;
+	/* padding: 0px; */
+	/* margin: 0px; */
 }
 
 .btn {

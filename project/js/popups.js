@@ -53,11 +53,11 @@ function popupClose(popupActive, doUnlock = true) {
 			bodyUnlock();
 		}
 		
-		// if (game_snake.style.visibility=='visible') 
-		// game_snake.style.visibility='hidden';
+		if (game_snake.style.visibility=='visible') 
+		game_snake.style.visibility='hidden';
 	
-		// if (swape.style.visibility == 'visible')
-		// swape.style.visibility='hidden';
+		if (swape.style.visibility == 'visible')
+		swape.style.visibility='hidden';
 	}
 }
 

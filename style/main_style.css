@@ -30,8 +30,13 @@ a:hover {
 
 .projects_content_text h2 {
 	font-size: 16px;
-	padding: 10px;
+	padding: 4px;
 	text-align: right;
+}
+
+.projects_content_group {
+	display: flex;
+	justify-content: space-between;
 }
 
 .popup_title {

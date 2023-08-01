@@ -246,7 +246,7 @@ function fnc_popUp(event) {
 			
 		document.getElementById("popup_title").innerHTML = "Разработка системы видеонаблюдения VSS by FallGen";
 		document.getElementById("popup_text").innerHTML = "VSS - Video Surveillance System by FallGen - система видеонаблюдения для объектов, организаций и компаний любого масштаба. в функциональную часть программного обеспечения входит: просмотр потоков видеозаписи камер в реальном времени; формирование вкладок видеокамер по заготовленным шаблонам: от 1 до 16 камер на одном экране; автоматизированная функция добавления камер в систему по заданному шаблону: ip, rstp, record; функция записи потока видеокамер, а также встроенный медиаплейер для просмотра архива";
-		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/project-1.html\" target=”_blanc”> подробнее</a> </h2>";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/VSS.html\" target=”_blanc”> подробнее</a> </h2>";
 		break;
 	
 	}

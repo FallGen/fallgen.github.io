@@ -1,10 +1,29 @@
 var i = 0;
 let img = [];
-let img1; 
 let count_slider = 1;
 let offset = 0;
 let offtop_img = 0 ;
 
+windowResize(3);
+document.getElementById("video_1").style.background = "#2368a1";
+
+function create_indicator(){
+	let test = document.querySelector('.indicator');
+	test.innerHTML = '';
+
+	for (let index = 1; index <= img.length; index++) {
+		let count = document.createElement("div");
+		count.setAttribute(	'class', 'indicator_point');
+		count.setAttribute(	'id', 'indicator_point'+ index);
+
+		count.style.borderRadius  = "10px";
+		count.style.height = "10px";
+		count.style.width = "10px";
+		count.style.margin = "3px";
+		test.appendChild(count);
+		}
+		find_pointer();
+}
 
 function find_pointer() {
 	for (let index = 1; index <= img.length; index++) {
@@ -56,21 +75,100 @@ else {
 
 }
 
+let width_img = 210;
+function swape_video_left() {
+	windowResize();
+	
+	offset = offset - width_img;
+	if (offset < -1) {
+		offset = width_img*6-offtop_img;
+	}
+	document.querySelector('.slider_line').style.left = -offset + 'px';
+}
 
-function fnc_popUp1(event) {
+function swape_video_right() {
+	windowResize();
+	
+	offset = offset + width_img;
+	if (offset > width_img*7-1-offtop_img) {
+		offset = 0
+	}
+	document.querySelector('.slider_line').style.left = -offset + 'px';
+}
+
+function fnc_video(event) {
+	let ID = event.target.id;
+	
+	function target_video (id_video) {
+		for (let index = 1; index <= 7; index++) {
+			if (index == id_video) 
+			document.getElementById("video_" + index).style.background = "#2368a1";
+			else
+			document.getElementById("video_" + index).style.background = "white";
+
+		}
+	}
+	
+	switch (ID) {
+		case 'video_1':
+		document.getElementById("portfolio_video").innerHTML = "<iframe  id = \"video_on_youtube\" class = \"video_on_youtube\" src=\"https://www.youtube.com/embed/0XzkRQA-y6w\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+		target_video (1);
+		break;		
+		
+		case 'video_2':
+		document.getElementById("portfolio_video").innerHTML = "<iframe id = \"video_on_youtube\" class = \"video_on_youtube\" src=\"https://www.youtube.com/embed/7PmhQaHuS48\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+		target_video (2);
+		break;		
+		
+		case 'video_3': 
+		document.getElementById("portfolio_video").innerHTML = "<iframe id = \"video_on_youtube\" class = \"video_on_youtube\" src=\"https://www.youtube.com/embed/QgcKxwYQGFU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+		target_video (3);
+		break;		
+		
+		case 'video_4': 
+		document.getElementById("portfolio_video").innerHTML = "<iframe id = \"video_on_youtube\" class = \"video_on_youtube\" src=\"https://www.youtube.com/embed/0dspRG2_RF4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+		target_video (4);
+		break;		
+		
+		case 'video_5': 
+		document.getElementById("portfolio_video").innerHTML = "<iframe id = \"video_on_youtube\" class = \"video_on_youtube\" src=\"https://www.youtube.com/embed/4T5keGv0MSg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+		target_video (5);
+		break;		
+		
+		case 'video_6': 
+		document.getElementById("portfolio_video").innerHTML = "<iframe id = \"video_on_youtube\" class = \"video_on_youtube\" src=\"https://www.youtube.com/embed/TcoskJlzJ_w\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+		target_video (6);
+		break;		
+		
+		case 'video_7': 
+		document.getElementById("portfolio_video").innerHTML = "<iframe id = \"video_on_youtube\" class = \"video_on_youtube\"src=\"https://www.youtube.com/embed/SqwdRp9Ni0U\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+		target_video (7);
+		break;
+		
+		
+		
+	}
+}
+
+
+function fnc_popUp(event) {
 	let ID = event.target.id;
 	count_slider = 1;
 	switch (ID) {
-		case 'img1':
+		case 'project_1':
 		
-		//img = ["url('image/img1.png')", "url('image/project1.2.jpg')", "url('image/project1.3.jpg')", "url('image/project1.4.jpg')", "url('image/project1.5.jpg')"];
+		img = ["url('image/project1.1.jpg')", "url('image/project1.2.jpg')", "url('image/project1.3.jpg')", "url('image/project1.4.jpg')", "url('image/project1.5.jpg')"];
 		
-		img1 = "url('../image/img2.png')";
-		popup_img.style.backgroundImage = img;
+		popup_img.style.backgroundImage = img[i];
 		
+		create_indicator();
+
+		document.getElementById("popup_title").innerHTML = "Приложения для расчёта термодинамических функций";
+		document.getElementById("popup_text").innerHTML = "Приложение для расчета термодинамических функций разных химических соединения с расчётом энергии Гибса, удельной теплоёмкости, энтропии и энтальгии.";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://docs.google.com/document/d/1IacQBEXn9GeuX3t5jsfJDyyzk_BK3qy15EuescexWgU/edit\" target=”_blanc”> подробнее 1 </a> </h2> <h2> <a href = \"https://docs.google.com/document/d/1aYsD30YBPXqZ4Q3Y4TuxmnS1bjc8vdQ_/edit?usp=sharing&ouid=110215117524398136659&rtpof=true&sd=true\" target=”_blanc”> подробнее 2 </a> </h2>";
 		break;
 
-		case 'img2':
+		case 'project_2':
 
 		img = ["url('image/project2.1.jpg')", "url('image/project2.2.jpg')", "url('image/project2.3.jpg')", "url('image/project2.4.jpg')"];
 		popup_img.style.backgroundImage = img[i];
@@ -148,11 +246,19 @@ function fnc_popUp1(event) {
 			
 		document.getElementById("popup_title").innerHTML = "Разработка системы видеонаблюдения VSS by FallGen";
 		document.getElementById("popup_text").innerHTML = "VSS - Video Surveillance System by FallGen - система видеонаблюдения для объектов, организаций и компаний любого масштаба. в функциональную часть программного обеспечения входит: просмотр потоков видеозаписи камер в реальном времени; формирование вкладок видеокамер по заготовленным шаблонам: от 1 до 16 камер на одном экране; автоматизированная функция добавления камер в систему по заданному шаблону: ip, rstp, record; функция записи потока видеокамер, а также встроенный медиаплейер для просмотра архива";
-		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/project-1.html\" target=”_blanc”> подробнее</a> </h2>";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/VSS.html\" target=”_blanc”> подробнее</a> </h2>";
 		break;
 	
 	}
 }
 
+function AutoSlide() {
+	if (i == img.length) {
+		i = 0;
+	}
+	popup_img.style.backgroundImage = img[i];
+	i++;
+	setTimeout(AutoSlide, 1000);
+}
 
 

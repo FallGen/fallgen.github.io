@@ -64,6 +64,19 @@ h1, h2, h3, h4, h5, a{
     padding: 40px;
     font-size: 16px;
 }
+.description_heading h1 {
+    color: #2368a1;
+}
+
+.description_block1 {
+    max-width: auto;
+    background-color: #E5E5E5;
+}
+
+.description_block2 {
+    max-width: auto;
+    background-color: white;
+}
 
 .description {
     max-width: 1024px;
@@ -73,7 +86,6 @@ h1, h2, h3, h4, h5, a{
     justify-content: center;
     align-items: center;
     text-align: left;
-    /* background-color: silver; */
 }
 
 .description_heading {
@@ -82,7 +94,7 @@ h1, h2, h3, h4, h5, a{
 }
 
 .description_heading h1 {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #2368a1;
 	margin: auto;
 	padding-bottom: 15px;
 
@@ -105,6 +117,7 @@ h1, h2, h3, h4, h5, a{
     height: auto;
     width: 90%;
     /* width: 440px; */
+    margin: 5px;
 
     background-size: cover;
 	background-position: center center;
@@ -119,13 +132,13 @@ h1, h2, h3, h4, h5, a{
 }
 
 .projects_block {
-	border-top: 7px solid black;
+	border-top: 7px solid #2368a1;
 	margin-bottom: 25px;
 	background: white;
 	display: flex;
     flex-direction: column;
     justify-content: space-around;
-	box-shadow: 3px 3px 10px black;
+	box-shadow: 3px 3px 10px #2368a1;
 }
 
 .project_icon1, .project_icon2{
@@ -162,20 +175,6 @@ h1, h2, h3, h4, h5, a{
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     text-align: center;
 }
-
-.project_icon1 {
-    background-image: url("../image/img2.png");
-}
-.project_icon2 {
-    background-image: url("../image/img3.png");
-}
-.project_icon3 {
-    background-image: url("../image/img4.png");
-}
-.project_icon4 {
-    background-image: url("../image/img6.png");
-}
-
 
 /* popup */
 body.lock {
