@@ -119,6 +119,9 @@ h1, h2, h3, h4, h5, a{
     /* width: 440px; */
     margin: 5px;
 
+    border-radius: 50px 50px 50px 0;
+    box-shadow: 5px 5px 10px #2368a1;
+
     background-size: cover;
 	background-position: center center;
 
