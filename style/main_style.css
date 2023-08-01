@@ -604,7 +604,7 @@ body.lock {
 	box-shadow: 3px 3px 10px #2368a1;
 }
 
-.project_icon1, .project_icon2, .project_icon3, .project_icon4, .project_icon5, .project_icon6, .project_icon7, .project_icon8,.project_icon9{
+.project_icon1, .project_icon2, .project_icon3, .project_icon4, .project_icon5, .project_icon6, .project_icon7, .project_icon8,.project_icon9,.project_icon10{
 	background-size: cover;
 	background-position: center center;
 	min-height: 350px;
@@ -636,6 +636,9 @@ body.lock {
 }
 .project_icon9 {
 	background-image: url(../image/project9.png);
+}
+.project_icon10 {
+	background-image: url(../image/project10.2.png);
 }
 
 /* kontacts */
