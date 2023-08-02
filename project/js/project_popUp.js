@@ -258,6 +258,46 @@ function fnc_popUp(event) {
 		document.getElementById("popup_text").innerHTML = "информационная система VK_Parser by FallGen предназначена для анализа пользователей социальной сети Вконтакте, для выявления тенденций пользовательской активности, интересов и рекламы, что благополучно сказывается на маркетинг организаций и компаний";
 		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/VK_Parser.html\" target=”_blanc”> подробнее</a> </h2>";
 		break;
+
+		case 'project_11':
+			img = ["url('image/project11.1.png')","url('image/project11.2.png')", "url('image/project11.3.png')", "url('image/project11.4.png')", "url('image/project11.5.png')", "url('image/project11.6.png')"," url('image/project11.7.png')", "url('image/project11.8.png')"];
+			popup_img.style.backgroundImage = img[i];
+			create_indicator();
+			
+		document.getElementById("popup_title").innerHTML = "Разработка системы формирования листа закупок by FallGen";
+		document.getElementById("popup_text").innerHTML = "система удобного формирования листа закупок с возможностью сохранять, изменять и удалять товар/услугу; возможность экспортировать отформатированные листы закупок в MS Excel, а также производить печать листа закупок непосредственно из приложения в отформатированном виде";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/sfpl.html\" target=”_blanc”> подробнее</a> </h2>";
+		break;
+
+		case 'project_12':
+			img = ["url('image/project12.1.png')","url('image/project12.2.png')", "url('image/project12.3.png')", "url('image/project12.4.png')", "url('image/project12.5.png')", "url('image/project12.6.png')"," url('image/project12.7.png')", "url('image/project12.8.png')"];
+			popup_img.style.backgroundImage = img[i];
+			create_indicator();
+			
+		document.getElementById("popup_title").innerHTML = "Разработка программного обеспечения Cook manager by FallGen для расчёта себестоимости блюд с дополнительным функционалом";
+		document.getElementById("popup_text").innerHTML = "Cook manager by FallGen позволяет формировать листы рецептов, сохранять их локальном жестком диске, добавлять технологическую карту и фотографию, а так же расчитывать себестоимость того или иного рецепта, что позволяет выяснить тенденцию расходов на продукты в соответствии с их стоимостью и весом";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/cook_manager.html\" target=”_blanc”> подробнее</a> </h2>";
+		break;
+
+		case 'project_13':
+			img = ["url('image/project13.1.png')","url('image/project13.2.png')", "url('image/project13.3.png')", "url('image/project13.4.png')", "url('image/project13.5.png')", "url('image/project13.6.png')"];
+			popup_img.style.backgroundImage = img[i];
+			create_indicator();
+			
+		document.getElementById("popup_title").innerHTML = "Разработка программного обеспечения FallBuster by FallGen для быстрой и удобной настройки ОС Windows 10/11";
+		document.getElementById("popup_text").innerHTML = "программное обеспечение FallBuster by FallGen предназначено для оперативной настройки операционной системы при её переуставноки. функционал позволяет по клику кнопки настроить персонализацию ОС, установить программное обеспечение, драйвера, настроить службы виндовс, а также информативно отобразить характеристики технического устройства";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/FallBuster.html\" target=”_blanc”> подробнее</a> </h2>";
+		break;
+
+		case 'project_14':
+			img = ["url('image/project14.1.png')","url('image/project14.2.png')", "url('image/project14.3.png')", "url('image/project14.4.png')", "url('image/project14.5.png')", "url('image/project14.6.png')"];
+			popup_img.style.backgroundImage = img[i];
+			create_indicator();
+			
+		document.getElementById("popup_title").innerHTML = "Разработка cистемы автоматической настройки ip-устройств by FallGen";
+		document.getElementById("popup_text").innerHTML = "автоматизированная система настройки ip-устройств предоставляет возможность в один клик настроить ip-устройство, заранее заготовив шаблон настройки";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/ip_telephony.html\" target=”_blanc”> подробнее</a> </h2>";
+		break;
 	
 	}
 }
