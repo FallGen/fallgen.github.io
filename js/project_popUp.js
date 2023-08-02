@@ -276,7 +276,7 @@ function fnc_popUp(event) {
 			
 		document.getElementById("popup_title").innerHTML = "Разработка программного обеспечения Cook manager by FallGen для расчёта себестоимости блюд с дополнительным функционалом";
 		document.getElementById("popup_text").innerHTML = "Cook manager by FallGen позволяет формировать листы рецептов, сохранять их локальном жестком диске, добавлять технологическую карту и фотографию, а так же расчитывать себестоимость того или иного рецепта, что позволяет выяснить тенденцию расходов на продукты в соответствии с их стоимостью и весом";
-		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/cook_manager.html\" target=”_blanc”> подробнее</a> </h2>";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/Cook_manager.html\" target=”_blanc”> подробнее</a> </h2>";
 		break;
 	
 		case 'project_13':
