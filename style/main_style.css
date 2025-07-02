@@ -604,7 +604,7 @@ body.lock {
 	box-shadow: 3px 3px 10px #2368a1;
 }
 
-.project_icon1, .project_icon2, .project_icon3, .project_icon4, .project_icon5, .project_icon6, .project_icon7, .project_icon8,.project_icon9,.project_icon10,.project_icon11,.project_icon12,.project_icon13,.project_icon14{
+.project_icon1, .project_icon2, .project_icon3, .project_icon4, .project_icon5, .project_icon6, .project_icon7, .project_icon8,.project_icon9,.project_icon10,.project_icon11,.project_icon12,.project_icon13,.project_icon14,.project_icon15{
 	background-size: cover;
 	background-position: center center;
 	min-height: 350px;
@@ -651,6 +651,9 @@ body.lock {
 }
 .project_icon14 {
 	background-image: url(../image/project14.3.png);
+}
+.project_icon15 {
+	background-image: url(../image/project15.1.png);
 }
 
 /* kontacts */

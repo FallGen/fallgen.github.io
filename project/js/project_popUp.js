@@ -298,6 +298,16 @@ function fnc_popUp(event) {
 		document.getElementById("popup_text").innerHTML = "автоматизированная система настройки ip-устройств предоставляет возможность в один клик настроить ip-устройство, заранее заготовив шаблон настройки";
 		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/ip_telephony.html\" target=”_blanc”> подробнее</a> </h2>";
 		break;
+
+		case 'project_15':
+			img = ["url('image/project15.1.png')","url('image/project15.2.png')", "url('image/project15.3.png')", "url('image/project15.4.png')", "url('image/project15.5.png')", "url('image/project15.6.png')", "url('image/project15.7.png')", "url('image/project15.8.png')", "url('image/project15.9.png')", "url('image/project15.10.png')", "url('image/project15.11.png')", "url('image/project15.12.png')", "url('image/project15.12.png')", "url('image/project15.13.png')"];
+			popup_img.style.backgroundImage = img[i];
+			create_indicator();
+			
+		document.getElementById("popup_title").innerHTML = "Разработка информационно-управляющей системы VSS by FallGen";
+		document.getElementById("popup_text").innerHTML = "Информационно-управляющая система «VSS by FallGen» - умное решение для эффективного контроля и управления жизненным циклом организационного комплекса, в совокупности интегрированных программных модулей, разработанных для решения разнообразных функциональных задач организационной производственной деятельности в различных системах. Она объединяет технические средства, функциональные возможности, гибкость, достоверность, эффективность и качество результатов, обеспечивая комфортность и надежность в работе.";
+		document.getElementById("popup_dop").innerHTML = "<h2> <a href = \"https://fallgen.github.io/project/VSS_by_FallGen.html\" target=”_blanc”> подробнее</a> </h2>";
+		break;
 	
 	}
 }
